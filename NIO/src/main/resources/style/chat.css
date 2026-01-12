@@ -1,0 +1,44 @@
+/* 简化的 chat.css - 只保留基础样式 */
+.root {
+    -fx-font-family: "Segoe UI", "Microsoft YaHei";
+    -fx-background-color: #f5f7fa;
+}
+
+.label {
+    -fx-text-fill: #333;
+    -fx-font-size: 13px;
+}
+
+.text-area {
+    -fx-background-color: white;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+}
+
+.text-area .content {
+    -fx-background-color: white;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-text-fill: #333;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 8 12;
+    -fx-font-size: 14px;
+    -fx-border-color: #ddd;
+}
+
+.button {
+    -fx-background-color: #4f46e5;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-padding: 8 18;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #3b82f6;
+}

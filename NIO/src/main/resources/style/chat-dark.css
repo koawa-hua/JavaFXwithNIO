@@ -1,0 +1,91 @@
+/* =================== 根节点 =================== */
+.root {
+    -fx-background-color: #0b1220; /* 整体深色背景 */
+    -fx-font-family: "Segoe UI", "Microsoft YaHei";
+}
+
+/* =================== 标签文字 =================== */
+.label {
+    -fx-text-fill: #cbd5f5; /* 浅蓝文字 */
+    -fx-font-size: 13px;
+}
+
+/* =================== 文本输入框 =================== */
+.text-field, .text-area {
+    -fx-background-color: #111827;
+    -fx-text-fill: #e5e7eb;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 8 12;
+    -fx-font-size: 14px;
+}
+
+.text-area .content {
+    -fx-background-color: #111827;
+    -fx-text-fill: #e5e7eb;
+}
+
+/* =================== 按钮 =================== */
+.button {
+    -fx-background-color: linear-gradient(to right, #4f46e5, #3b82f6);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-padding: 8 18;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #6366f1, #60a5fa);
+}
+
+/* =================== 聊天列表 =================== */
+.chat-list {
+    -fx-background-color: rgba(18,26,47,0.95); /* 半透明深蓝 */
+    -fx-background-radius: 14;
+    -fx-padding: 10;
+}
+
+/* 滚动条美化 */
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #3b82f6;
+    -fx-background-radius: 4;
+}
+
+.list-view .scroll-bar:vertical .track {
+    -fx-background-color: rgba(18,26,47,0.6);
+}
+
+/* =================== 消息气泡 =================== */
+.chat-bubble {
+    -fx-background-color: #1f2937; /* 他人消息背景 */
+    -fx-text-fill: #e5e7eb;
+    -fx-padding: 8 12;
+    -fx-background-radius: 12;
+    -fx-wrap-text: true;
+    -fx-max-width: 60%;
+}
+
+.chat-bubble.self {
+    -fx-background-color: #3b82f6; /* 自己消息背景 */
+    -fx-text-fill: white;
+    -fx-alignment: center-right;
+}
+
+/* 消息气泡悬浮阴影 */
+.chat-bubble:hover {
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.1) , 4,0.0,0,1 );
+}
+
+/* 系统消息 */
+.chat-bubble.system {
+    -fx-background-color: #334155;
+    -fx-text-fill: #94a3b8;
+    -fx-alignment: center;
+    -fx-font-style: italic;
+}
+
+/* =================== 响应式调整 =================== */
+.list-view, .text-field, .text-area, .button {
+    -fx-focus-color: #4f46e5; /* 获取焦点时高亮颜色 */
+    -fx-faint-focus-color: transparent;
+}
